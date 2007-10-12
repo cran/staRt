@@ -27,11 +27,11 @@ box(lwd=2)
 if(sigma=="!="){
 fcritic1<-fcritic
 ppvalue<-pf(fcritic1,df1=n1-1,df2=n2-1)
-if(ppvalue<0.5) fcritic2<-qf(p=ppvalue,df1=n1-1,df2=n2-1,lower.tail=F)
+if(ppvalue<0.5) fcritic2<-qf(p=ppvalue,df1=n1-1,df2=n2-1,lower.tail=FALSE)
 else
 {
 fcritic2<-fcritic1
-fcritic1<-qf(p=1-ppvalue,df1=n1-1,df2=n2-1,lower.tail=T)
+fcritic1<-qf(p=1-ppvalue,df1=n1-1,df2=n2-1,lower.tail=TRUE)
 }
 
 if(fcritic2>=10){

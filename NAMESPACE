@@ -1,0 +1,3 @@
+export(ANOVA,Chi2.Test,LinRegTTest,One.PropZInt,One.PropZTest,One.Var.Stats,T.Test,TInterval,Two.PropZInt,Two.PropZTest,Two.SampFTest,Two.SampTInt,Two.SampTTest,Two.SampZInt,Two.SampZTest,Two.Var.Stats,Z.Test,ZInterval,.Last.lib)
+import(stats,utils,tools)
+.onUnload(.path.packages(pkgname))

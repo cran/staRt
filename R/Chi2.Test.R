@@ -19,7 +19,7 @@ par(mfrow=c(1,1))
 lim.sx<-0
 lim.dx<-10
 xx<-seq(lim.sx,lim.dx,by=0.01)
-plot(xx,dchisq(xx,df=gradiliberta),xlim=c(0,10),ylim=c(-0.1,0.25),xlab="",ylab="",type="n",axes=F)
+plot(xx,dchisq(xx,df=gradiliberta),xlim=c(0,10),ylim=c(-0.1,0.25),xlab="",ylab="",type="n",axes=FALSE)
 points(xx,dchisq(xx,df=gradiliberta),type="l",lwd=2)
 abline(h=0,lwd=2)
 box(lwd=2)
